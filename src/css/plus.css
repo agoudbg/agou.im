@@ -1,0 +1,166 @@
+:root{
+	
+	--block-bg: #E4E4E4;
+	--burl: #707070;
+}
+
+@media (prefers-color-scheme: dark) {
+
+	:root{
+	
+		--block-bg: #E4E4E4;
+		--burl: #E4E4E4;
+	}
+
+}
+
+
+#bodybg{
+	content: ' ';
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url('https://ae04.alicdn.com/kf/Ue12a0978c31f43c39148abf730b728d3N.jpg') center 0 no-repeat;
+	background-size: cover;
+
+}
+
+.lists{
+
+	padding-top: 11vh;
+	padding-right: 11%;
+	padding-left: 11%;
+	height: 76vh;
+	text-align: left;
+
+}
+
+.block-button{
+	
+	width: 100%;
+	height: 4vh;
+	margin: 0.6vh 0px;
+	padding: 1.5vh 15px;
+	text-align: center;
+	font-size: 3vh;
+	font-weight: bold;
+	vertical-align: middle;
+	border-radius: 5%;
+	/* box-shadow: 0px 0px 1px black; */
+
+}
+
+#myavatar{
+	
+	width: 12vh;
+	height: 12vh;
+	border-radius: 100%;
+	padding: 1.3vh;
+
+}
+
+black{
+	
+	color: black!important;
+	background-color: black;
+	
+}
+
+black:active, black:focus, black:hover{
+	
+	color: white!important;
+
+}
+
+.contactways{
+	
+	display: inline-block;
+	
+}
+
+.contact-button{
+	
+	display: inline-flex;
+	padding: 0px;
+	border-radius: 500000px;
+	max-width: 35px;
+	height: 35px;
+	margin: 2px 2px;
+	/* font-size: 16px; */
+	font-weight: bold;
+	overflow: hidden;
+	box-shadow: 0px 0px 1px black; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: break-all;
+	transition: all 0.5s;
+
+}
+
+.contact-button:hover{
+
+	max-width: 100%;
+	padding: 0px 15px 0 7px;
+
+}
+
+.contact-img{
+	
+	width: 19px;
+	height: 19px;
+	margin: 8px 9px 6px 7.8px;
+
+}
+
+.contact-button p{
+
+	margin: 9px 0;
+
+}
+	
+@media (min-width: 780px){
+
+	.block-button{
+		
+		width: calc((100% / 3) - 39px);
+		padding: 8vh 15px;
+		font-size: 3vh;
+		height: 6vh;
+		
+	}
+
+}
+
+.cr{
+
+	position: fixed;
+	bottom: 2px;
+	left: 2px;
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+
+}
+@media (prefers-color-scheme: dark) {
+			
+	#bodybg{
+
+		background: url('https://sc02.alicdn.com/kf/U397f060ab12f4b1997e3718a2a748d4c2.jpg') center 0 no-repeat;
+		background-size: cover;
+
+	}
+	
+}
+
+	@media (max-width: 580px)and (prefers-color-scheme: dark) {
+				
+		#bodybg{
+
+			background: url('https://sc01.alicdn.com/kf/U780a8aa3818e4eb292fb765a2d4be676X.jpg') center 0 no-repeat;
+			background-size: cover;
+
+		}
+	}
