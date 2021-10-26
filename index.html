@@ -1,54 +1,56 @@
 <!doctype html>
 <html>
-
-	<head>
-
-		<meta charset="utf-8" />
-		<title>I’m Agou - agou.im</title>
-		<!-- 自适应 -->
-		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
-		<meta name='apple-mobile-web-app-capable' content='yes'>
-		<meta name='apple-mobile-web-app-status-bar-style' content='black'>
-		<meta name='format-detection' content='telephone=no'>
-		<!-- 样式 -->
-		<link rel="stylesheet" type="text/css" href="/src/css/common.css">
-		<link rel="stylesheet" type="text/css" href="/src/css/plus.css">
-		<base target="_blank">
-
-	</head>
-
-	<body>
-
-		<div id="bodybg"></div>
-		<div class="lists">
-			<div class="title"><img class="button" id="myavatar" src="/src/img/nick.jpg" onclick=";">
-				<h1>Hello, I’m Agou. </h1>
-			</div>
-
-			<div class="flex">
-				<a href="//junbo.wang?from=agou.im" class="block-button button">Sitemap</a>
-				<a href="//blog.agou.im?from=agou.im" class="block-button button">Blog</a>
-				<a href="//junbo.wang/friends?from=agou.im" class="block-button button">Friends</a>
-			</div>
-			<div><center>
-				<a href="mailto:i@agou.im" class="button contact-button" title="E-Mail"><img class="contact-img" src="/src/img/contact-icons/email.svg"/><p>E-Mail</p></a>
-				<a href="https://github.com/agoudbg" class="button contact-button" title="GitHub"><img class="contact-img" src="/src/img/contact-icons/github.svg"/><p>GitHub</p></a>
-				<a href="http://wpa.qq.com/msgrd?v=3&uin=2833769658&site=qq&menu=yes" class="button contact-button" title="QQ"><img class="contact-img" src="/src/img/contact-icons/qq.svg"/><p>QQ</p></a>
-						</div>
-		</center></div>
-		<p class="cr">© 2021 agou.im. All rights reserved. </p>
-
-	</body>
-
+<head>
+	<meta charset="utf-8" />
+	<title>I’m Agou - agou.im</title>
+	<!-- 自适应 -->
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name='apple-mobile-web-app-capable' content='yes'>
+	<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+	<meta name='format-detection' content='telephone=no'>
+	<!-- 样式 -->
+	<link rel="stylesheet" type="text/css" href="/src/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/src/css/plus.css">
+	<base target="_blank">
+</head>
+<body>
+	<div id="bodybg"></div>
+	<div class="lists">
+		<div class="title"><img class="button" id="myavatar" src="/src/img/nick.jpg" onclick=";">
+			<h1>Hello, I’m Agou. </h1>
+		</div>
+		<div class="flex">
+			<a href="//junbo.wang?from=agou.im" class="block-button button">Sitemap</a>
+			<a href="//blog.agou.im?from=agou.im" class="block-button button">Blog</a>
+			<a href="//junbo.wang/friends?from=agou.im" class="block-button button">Friends</a>
+		</div>
+		<div>
+			<center>
+				<a href="mailto:i@agou.im" class="button contact-button" title="E-Mail"><img class="contact-img"
+						src="/src/img/contact-icons/email.svg" />
+					<p>E-Mail</p>
+				</a>
+				<a href="https://github.com/agoudbg" class="button contact-button" title="GitHub"><img
+						class="contact-img" src="/src/img/contact-icons/github.svg" />
+					<p>GitHub</p>
+				</a>
+				<a href="http://wpa.qq.com/msgrd?v=3&uin=2833769658&site=qq&menu=yes" class="button contact-button"
+					title="QQ"><img class="contact-img" src="/src/img/contact-icons/qq.svg" />
+					<p>QQ</p>
+				</a>
+		</div>
+		</center>
+	</div>
+	<p class="cr">© 2021 agou.im. All rights reserved. </p>
+</body>
 <script>
-		fetch('https://v1.hitokoto.cn?c=i')
-			.then(response => response.json())
-			.then(data => {
-				const hitokoto = document.getElementById('hitokoto_text')
-				hitokoto.innerText = data.hitokoto
-			})
-			.catch(console.error)
-	</script>
-
+	fetch('https://v1.hitokoto.cn?c=i')
+		.then(response => response.json())
+		.then(data => {
+			const hitokoto = document.getElementById('hitokoto_text')
+			hitokoto.innerText = data.hitokoto
+		})
+		.catch(console.error)
+</script>
 
 </html>
